@@ -1,0 +1,13 @@
+Script requirements.txt shows requirements for using this repository and how to install it on Ubuntu 20.04.
+
+
+
+
+DOWNLOAD THE PX4 SOURCE CODE
+
+git clone https://github.com/PX4/PX4-Autopilot.git --recursive
+
+
+PYTHON MAVSDAK INSTALLATION
+
+pip3 install mavsdk

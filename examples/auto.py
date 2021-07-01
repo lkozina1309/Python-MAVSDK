@@ -24,7 +24,7 @@ async def run():
 
     mission_items = []
     mission_items.append(MissionItem(45.4929235,
-				                             18.0954726,
+				     18.0954726,
                                      10,
                                      5,
                                      True,
@@ -34,7 +34,7 @@ async def run():
                                      20,
                                      20))
     mission_items.append(MissionItem(45.4926528,
-    				                         18.0940403,
+    	                             18.0940403,
                                      10,
                                      5,
                                      True,

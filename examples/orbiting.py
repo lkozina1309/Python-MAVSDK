@@ -48,16 +48,11 @@ async def run():
     await drone.action.do_orbit(5, 2, yaw_behaviour, 45.4926528, 18.0940403, flying_alt)
     await asyncio.sleep(20)
     
-    await drone.action.goto_location(47.398036222362471, 8.5450146439425509, flying_alt, 0)
-    await asyncio.sleep(20)
-    print("Orbiting")
-    await drone.action.do_orbit(5, 2, yaw_behaviour, 7.397825620791885, 8.5450092830163271, flying_alt)
-    await asyncio.sleep(20)
-    
+       
     await drone.action.goto_location(45.4918819, 18.0936916, flying_alt, 0)
     await asyncio.sleep(20)
     print("Orbiting")
-    await drone.action.do_orbit(5, 2, yaw_behaviour, 45.4918819, 18.09369164, flying_alt)
+    await drone.action.do_orbit(5, 2, yaw_behaviour, 45.4918819, 18.0936916, flying_alt)
     await asyncio.sleep(20) 
     
     print("Return to launch.")

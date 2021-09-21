@@ -30,9 +30,11 @@ async def run():
                                      True,
                                      float('nan'),
                                      float('nan'),
-                                     MissionItem.CameraAction.START_VIDEO,
-                                     20,
-                                     20))
+                                     MissionItem.CameraAction.NONE,
+                                     float('nan'),
+                                     float('nan'),
+				     float('nan'),
+				     float('nan')))
     mission_items.append(MissionItem(45.4926528,
     	                             18.0940403,
                                      10,
@@ -40,9 +42,11 @@ async def run():
                                      True,
                                      float('nan'),
                                      float('nan'),
-                                     MissionItem.CameraAction.START_VIDEO,
-                                     20,
-                                     20))
+                                     MissionItem.CameraAction.NONE,
+                                     float('nan'),
+                                     float('nan'),
+				     float('nan'),
+				     float('nan')))
     mission_items.append(MissionItem(45.4918819,
                                      18.0936916,
                                      10,
@@ -50,9 +54,11 @@ async def run():
                                      True,
                                      float('nan'),
                                      float('nan'),
-                                     MissionItem.CameraAction.START_VIDEO,
-                                     20,
-                                     20))
+                                     MissionItem.CameraAction.NONE,
+                                     float('nan'),
+                                     float('nan'),
+				     float('nan'),
+				     float('nan')))
 
     mission_plan = MissionPlan(mission_items)
 

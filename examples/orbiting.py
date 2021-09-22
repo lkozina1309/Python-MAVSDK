@@ -16,7 +16,7 @@ async def run():
             print(f"Drone discovered!")
             break
             
-    rint("Waiting for position estimate")
+    print("Waiting for position estimate")
     async for health in drone.telemetry.health():
         if health.is_global_position_ok:
             print("Global position estimate ok")
@@ -39,21 +39,8 @@ async def run():
     await drone.action.goto_location(45.4929235, 18.0954726, flying_alt, 0)
     await asyncio.sleep(20)
     print("Orbiting")
-    await drone.action.do_orbit(5, 2, yaw_behaviour, 45.4929235, 18.0954726, flying_alt)
-    await asyncio.sleep(20)
-    
-    await drone.action.goto_location(45.4926528, 18.0940403, flying_alt, 0)
-    await asyncio.sleep(20)
-    print("Orbiting")
-    await drone.action.do_orbit(5, 2, yaw_behaviour, 45.4926528, 18.0940403, flying_alt)
-    await asyncio.sleep(20)
-    
-       
-    await drone.action.goto_location(45.4918819, 18.0936916, flying_alt, 0)
-    await asyncio.sleep(20)
-    print("Orbiting")
-    await drone.action.do_orbit(5, 2, yaw_behaviour, 45.4918819, 18.0936916, flying_alt)
-    await asyncio.sleep(20) 
+    await drone.action.do_orbit(30, 3, yaw_behaviour, 45.4929235, 18.0954726, flying_alt)
+    await asyncio.sleep(300)
     
     print("Return to launch.")
     await drone.action.return_to_launch()
